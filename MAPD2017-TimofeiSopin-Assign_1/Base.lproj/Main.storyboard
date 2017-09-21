@@ -21,14 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iOS11Background" translatesAutoresizingMaskIntoConstraints="NO" id="UWr-HM-dGu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iOS11Background" translatesAutoresizingMaskIntoConstraints="NO" id="UWr-HM-dGu">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nkI-VX-heI">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nkI-VX-heI">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" id="jsX-FM-sqv">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jsX-FM-sqv">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
@@ -394,6 +392,16 @@
                             </visualEffectView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="nkI-VX-heI" secondAttribute="bottom" id="Dhg-AJ-DFM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UWr-HM-dGu" secondAttribute="bottom" id="H2L-dA-Ovd"/>
+                            <constraint firstItem="nkI-VX-heI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OJr-h5-GKe"/>
+                            <constraint firstAttribute="trailing" secondItem="UWr-HM-dGu" secondAttribute="trailing" id="ait-5T-v2f"/>
+                            <constraint firstAttribute="trailing" secondItem="nkI-VX-heI" secondAttribute="trailing" id="kmK-Ur-aRi"/>
+                            <constraint firstItem="UWr-HM-dGu" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="s6H-Uu-Pfg"/>
+                            <constraint firstItem="nkI-VX-heI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="u2A-59-d42"/>
+                            <constraint firstItem="UWr-HM-dGu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="wAH-jh-6Ll"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
