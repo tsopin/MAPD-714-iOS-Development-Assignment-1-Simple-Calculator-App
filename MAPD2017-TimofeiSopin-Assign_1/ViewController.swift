@@ -1,11 +1,12 @@
 //
 //  ViewController.swift
-//  Calculator
+//  Timofei Sopin
+//  Student ID 300965775
+//  Created 2017-09-20
+//  MAPD2017-TimofeiSopin-Assign_1_Simple_Calculator
+//  Ver. 1.0.0
+//  Copyright © 2017 Centennial College. All rights reserved.
 //
-//  Created by Todd Perkins on 10/28/16.
-//  Copyright © 2016 Todd Perkins. All rights reserved.
-//
-
 import UIKit
 
 enum modes {

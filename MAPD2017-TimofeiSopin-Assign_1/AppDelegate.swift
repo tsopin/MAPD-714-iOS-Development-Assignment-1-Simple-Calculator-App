@@ -1,8 +1,10 @@
 //
 //  AppDelegate.swift
-//  MAPD2017-TimofeiSopin-Assign_1
-//
-//  Created by Timofei Sopin on 2017-09-20.
+//  Timofei Sopin
+//  Student ID 300965775
+//  Created 2017-09-20
+//  MAPD2017-TimofeiSopin-Assign_1_Simple_Calculator
+//  Ver. 1.0.0
 //  Copyright © 2017 Centennial College. All rights reserved.
 //
 
