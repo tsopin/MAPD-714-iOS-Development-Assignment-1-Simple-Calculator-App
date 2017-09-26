@@ -30,7 +30,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="65" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v8D-8o-39D">
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="58" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" preferredMaxLayoutWidth="398" translatesAutoresizingMaskIntoConstraints="NO" id="v8D-8o-39D">
                                             <rect key="frame" x="8" y="73" width="398" height="121"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="102"/>
@@ -127,7 +127,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOW-Nu-A4c" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOW-Nu-A4c" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="10" y="313" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -150,7 +150,7 @@
                                                 <action selector="didPressNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zub-4K-C42"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh7-d8-06l" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fh7-d8-06l" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="111" y="313" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -173,7 +173,7 @@
                                                 <action selector="didPressNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="u1n-Ya-XdJ"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYP-vK-K0f" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OYP-vK-K0f" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="212" y="313" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -196,7 +196,7 @@
                                                 <action selector="didPressNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FUk-1b-sJy"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyF-3Y-RoI" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gyF-3Y-RoI" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="313" y="313" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.55214576198630139" colorSpace="calibratedRGB"/>
@@ -218,7 +218,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8p-ia-Vji" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W8p-ia-Vji" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="10" y="414" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -241,7 +241,7 @@
                                                 <action selector="didPressNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O9K-OE-iou"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wB-hh-VN4" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1wB-hh-VN4" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="111" y="414" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -264,7 +264,7 @@
                                                 <action selector="didPressNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TdU-Wj-v2W"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OI-xC-Rs5" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5OI-xC-Rs5" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="212" y="414" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -287,7 +287,7 @@
                                                 <action selector="didPressNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aF8-Kx-aYz"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jb-md-8M1" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Jb-md-8M1" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="313" y="414" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.55214576198630139" colorSpace="calibratedRGB"/>
@@ -312,7 +312,7 @@
                                                 <action selector="didPressSubtract:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xzg-vX-DwS"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmA-rZ-IpQ" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZmA-rZ-IpQ" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="10" y="515" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -335,7 +335,7 @@
                                                 <action selector="didPressNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tue-Pr-iVO"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTR-pf-efh" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTR-pf-efh" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="111" y="515" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -358,7 +358,7 @@
                                                 <action selector="didPressNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7e3-w4-cgb"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT6-iV-2gb" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gT6-iV-2gb" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="212" y="515" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -381,7 +381,7 @@
                                                 <action selector="didPressNumber:" destination="BYZ-38-t0r" eventType="touchUpInside" id="87T-xE-iHd"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcy-sL-L5Q" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcy-sL-L5Q" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="313" y="515" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.55214576198630139" colorSpace="calibratedRGB"/>
@@ -406,7 +406,7 @@
                                                 <action selector="didPressPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sls-d4-eXD"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbU-4r-1qS" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KbU-4r-1qS" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="10" y="616" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
@@ -426,7 +426,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWU-xF-XQv" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
+                                        <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="fill" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JWU-xF-XQv" customClass="roundButton" customModule="MAPD2017_TimofeiSopin_Assign_1" customModuleProvider="target">
                                             <rect key="frame" x="111" y="616" width="90" height="90"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                             <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>

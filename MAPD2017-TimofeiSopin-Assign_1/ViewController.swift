@@ -33,14 +33,28 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func didPressPlus(_ sender: AnyObject) {
-        
         changeMode(newMode: .addition)
     }
-    
     @IBAction func didPressSubtract(_ sender: AnyObject) {
         changeMode(newMode: .subtraction)
     }
     @IBAction func didPressEquals(_ sender: AnyObject) {
+        guard let labelInt:Int = Int(labelString) else {
+            return
+        }
+        if (currentMode == .not_set || lastButtonWasMode) {
+            return
+        }
+        if (currentMode == .addition) {
+            savedNum += labelInt
+        }
+        else if(currentMode == .subtraction) {
+            savedNum -= labelInt
+        }
+        currentMode = .not_set
+        labelString = "\(savedNum)"
+        updateText()
+        lastButtonWasMode = true
     }
     @IBAction func didPressClear(_ sender: AnyObject) {
         
@@ -59,7 +73,6 @@ class ViewController: UIViewController {
             labelString = "0"
         }
         
-        
         labelString = labelString.appending(stringValue!)
         updateText()
     }
@@ -68,8 +81,7 @@ class ViewController: UIViewController {
         guard let labelInt:Int = Int(labelString) else {
             return
         }
-        
-        if (currentMode == .not_set){
+        if (currentMode == .not_set) {
             savedNum = labelInt
         }
         
@@ -83,7 +95,6 @@ class ViewController: UIViewController {
         
         currentMode = newMode
         lastButtonWasMode = true
-        
     }
     
     
