@@ -13,6 +13,9 @@ enum modes {
     case not_set
     case addition
     case subtraction
+    case multuiplication
+    case division
+    case squareRoot
 }
 
 class ViewController: UIViewController {
@@ -20,7 +23,7 @@ class ViewController: UIViewController {
     
     var labelString:String = "0"
     var currentMode:modes = .not_set
-    var savedNum:Int = 0
+    var savedNum:Float = 0
     var lastButtonWasMode:Bool = false
     
     override func viewDidLoad() {
@@ -38,8 +41,17 @@ class ViewController: UIViewController {
     @IBAction func didPressSubtract(_ sender: AnyObject) {
         changeMode(newMode: .subtraction)
     }
+    @IBAction func didPressMultiply(_ sender: UIButton) {
+        changeMode (newMode: .multuiplication)
+    }
+    @IBAction func didPressDivision(_ sender: UIButton) {
+        changeMode(newMode: .division)
+    }
+    @IBAction func didPressSqRt(_ sender: UIButton) {
+        changeMode(newMode: .squareRoot)
+    }
     @IBAction func didPressEquals(_ sender: AnyObject) {
-        guard let labelInt:Int = Int(labelString) else {
+        guard let labelInt:Float = Float(labelString) else {
             return
         }
         if (currentMode == .not_set || lastButtonWasMode) {
@@ -50,6 +62,15 @@ class ViewController: UIViewController {
         }
         else if(currentMode == .subtraction) {
             savedNum -= labelInt
+        }
+        else if(currentMode == .multuiplication) {
+            savedNum *= labelInt
+        }
+        else if(currentMode == .division) {
+            savedNum /= labelInt
+        }
+        else if(currentMode == .squareRoot) {
+            savedNum = labelInt
         }
         currentMode = .not_set
         labelString = "\(savedNum)"
@@ -78,7 +99,7 @@ class ViewController: UIViewController {
     }
     
     func updateText() {
-        guard let labelInt:Int = Int(labelString) else {
+        guard let labelInt:Float = Float(labelString) else {
             return
         }
         if (currentMode == .not_set) {

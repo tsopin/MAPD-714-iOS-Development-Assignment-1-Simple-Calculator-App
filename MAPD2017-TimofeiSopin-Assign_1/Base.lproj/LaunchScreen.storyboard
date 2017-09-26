@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,27 +24,23 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iOS11BackgroundBlur" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sae-PY-PvL">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IIc-hh-oW1">
-                                <rect key="frame" x="20" y="28" width="374" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="MAPD 714 - iOS Development " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUJ-h0-4Pd">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="74"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="27"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="Assignment 1" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jD8-sD-HDC">
-                                        <rect key="frame" x="0.0" y="74" width="374" height="50"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="24"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textView>
-                                </subviews>
-                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="MAPD 714 - iOS Development " textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUJ-h0-4Pd">
+                                <rect key="frame" x="14" y="39" width="374" height="74"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="27"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Assignment 1" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jD8-sD-HDC">
+                                <rect key="frame" x="20" y="121" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="24"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07t-gg-BsR">
-                                <rect key="frame" x="20" y="242" width="374" height="134"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="20" y="215" width="374" height="134"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Simple Calculator App">
                                         <attributes>
@@ -58,40 +53,32 @@
                                 </attributedString>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pUJ-ej-ZNz">
-                                <rect key="frame" x="60" y="586" width="334" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="Timofei Sopin " textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxj-5K-mST">
-                                        <rect key="frame" x="0.0" y="0.0" width="334" height="50"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" editable="NO" text="Student ID - 300965775" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWF-kn-D0R">
-                                        <rect key="frame" x="0.0" y="50" width="334" height="50"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                        <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textView>
-                                </subviews>
-                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" fixedFrame="YES" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="50" editable="NO" text="Student ID - 300965775" textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bWF-kn-D0R">
+                                <rect key="frame" x="20" y="650" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="748" verticalCompressionResistancePriority="748" fixedFrame="YES" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="50" editable="NO" text="Timofei Sopin " textAlignment="right" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qxj-5K-mST">
+                                <rect key="frame" x="20" y="604" width="374" height="50"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="sae-PY-PvL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="4JK-Ho-vRF"/>
-                            <constraint firstAttribute="trailing" secondItem="sae-PY-PvL" secondAttribute="trailing" id="4x3-J2-zwX"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="sae-PY-PvL" secondAttribute="trailing" id="Wme-mO-vD7"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="sae-PY-PvL" secondAttribute="bottom" id="bPY-cB-v5f"/>
-                            <constraint firstItem="sae-PY-PvL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="crq-c0-7nA"/>
-                            <constraint firstItem="sae-PY-PvL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" id="hs5-Sd-oVb"/>
-                            <constraint firstItem="sae-PY-PvL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="vqd-pO-QdB"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="sae-PY-PvL" secondAttribute="bottom" id="wml-Xi-Fti"/>
+                            <constraint firstItem="sae-PY-PvL" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="A56-C4-eNs"/>
+                            <constraint firstItem="sae-PY-PvL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="NzK-yo-H6c"/>
+                            <constraint firstAttribute="trailing" secondItem="sae-PY-PvL" secondAttribute="trailing" id="pAI-KH-2Ze"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="sae-PY-PvL" secondAttribute="bottom" id="qqy-4M-vjd"/>
                         </constraints>
                     </view>
                 </viewController>
