@@ -8,9 +8,10 @@
 //  Copyright © 2017 Centennial College. All rights reserved.
 //
 import UIKit
+import Darwin
 
 enum modes {
-    case not_set
+    case notSet
     case addition
     case subtraction
     case multuiplication
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     
     var labelString:String = "0"
-    var currentMode:modes = .not_set
+    var currentMode:modes = .notSet
     var savedNum:Double = 0
     var lastButtonWasMode:Bool = false
     
@@ -38,17 +39,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // Dot button clicked
     @IBAction func didPressDot(_ sender: UIButton) {
         if (!(label.text?.contains("."))!){
             labelString = (label.text?.appending("."))!
             label.text = labelString
         }
     }
-    
+    // +/- button clicked
     @IBAction func didPressPM(_ sender: UIButton) {
         
-        if (!(label.text?.contains("-"))!){
+        if (!(label.text?.contains("-"))!) {
             labelString = "-\(label.text!)"
         }
         else {
@@ -57,29 +58,35 @@ class ViewController: UIViewController {
             }
             label.text = labelString
     }
+    // Plus button clicked
     @IBAction func didPressPlus(_ sender: AnyObject) {
         changeMode(newMode: .addition)
     }
+    // Substract button clicked
     @IBAction func didPressSubtract(_ sender: AnyObject) {
         changeMode(newMode: .subtraction)
     }
+    // Multiply button clicked
     @IBAction func didPressMultiply(_ sender: UIButton) {
         changeMode (newMode: .multuiplication)
     }
+    // Devision button clicked
     @IBAction func didPressDivision(_ sender: UIButton) {
         changeMode(newMode: .division)
     }
+    // Square Root button clicked
     @IBAction func didPressSqRt(_ sender: UIButton) {
         changeMode(newMode: .squareRoot)
     }
     @IBAction func didPressPercent(_ sender: UIButton) {
         changeMode(newMode: .percent)
     }
+    // Equals button clicked
     @IBAction func didPressEquals(_ sender: AnyObject) {
         guard let labelInt:Double = Double(labelString) else {
             return
         }
-        if (currentMode == .not_set || lastButtonWasMode) {
+        if (currentMode == .notSet || lastButtonWasMode) {
             return
         }
         if (currentMode == .addition) {
@@ -94,11 +101,11 @@ class ViewController: UIViewController {
         else if(currentMode == .division) {
             savedNum /= labelInt
         }
-         if(currentMode == .squareRoot) {
-            savedNum = labelInt
+        else if(currentMode == .squareRoot) {
+            savedNum = sqrt(savedNum)
         }
         
-        currentMode = .not_set
+        currentMode = .notSet
         labelString = "\(savedNum)"
         updateText()
         lastButtonWasMode = true
@@ -106,7 +113,7 @@ class ViewController: UIViewController {
     @IBAction func didPressClear(_ sender: AnyObject) {
         
         labelString = "0"
-        currentMode = .not_set
+        currentMode = .notSet
         savedNum = 0
         lastButtonWasMode = false
         label.text = "0"
@@ -128,7 +135,7 @@ class ViewController: UIViewController {
         guard let labelInt:Double = Double(labelString) else {
             return
         }
-        if (currentMode == .not_set) {
+        if (currentMode == .notSet) {
             savedNum = labelInt
         }
         
