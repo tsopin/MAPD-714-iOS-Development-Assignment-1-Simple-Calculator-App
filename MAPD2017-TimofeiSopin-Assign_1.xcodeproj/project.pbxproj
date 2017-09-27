@@ -44,6 +44,7 @@
 			children = (
 				74176B821F73418F0045F24C /* MAPD2017-TimofeiSopin-Assign_1 */,
 				74176B811F73418F0045F24C /* Products */,
+				748E457B1F7B2A4D006056EF /* New Group */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,13 +61,21 @@
 			children = (
 				74176B8C1F73418F0045F24C /* LaunchScreen.storyboard */,
 				74176B831F73418F0045F24C /* AppDelegate.swift */,
-				74176B951F73422A0045F24C /* roundButton.swift */,
 				74176B851F73418F0045F24C /* ViewController.swift */,
 				74176B871F73418F0045F24C /* Main.storyboard */,
-				749474DF1F7ACEC200696A8C /* Landscape.storyboard */,
 				74176B8A1F73418F0045F24C /* Assets.xcassets */,
 				74176B8F1F73418F0045F24C /* Info.plist */,
 			);
+			path = "MAPD2017-TimofeiSopin-Assign_1";
+			sourceTree = "<group>";
+		};
+		748E457B1F7B2A4D006056EF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				74176B951F73422A0045F24C /* roundButton.swift */,
+				749474DF1F7ACEC200696A8C /* Landscape.storyboard */,
+			);
+			name = "New Group";
 			path = "MAPD2017-TimofeiSopin-Assign_1";
 			sourceTree = "<group>";
 		};

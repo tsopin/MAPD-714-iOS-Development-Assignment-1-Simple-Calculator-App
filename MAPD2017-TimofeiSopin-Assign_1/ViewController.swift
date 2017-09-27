@@ -16,6 +16,7 @@ enum modes {
     case multuiplication
     case division
     case squareRoot
+    case percent
 }
 
 class ViewController: UIViewController {
@@ -23,8 +24,9 @@ class ViewController: UIViewController {
     
     var labelString:String = "0"
     var currentMode:modes = .not_set
-    var savedNum:Float = 0
+    var savedNum:Double = 0
     var lastButtonWasMode:Bool = false
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,6 +36,26 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+
+    @IBAction func didPressDot(_ sender: UIButton) {
+        if (!(label.text?.contains("."))!){
+            labelString = (label.text?.appending("."))!
+            label.text = labelString
+        }
+    }
+    
+    @IBAction func didPressPM(_ sender: UIButton) {
+        
+        if (!(label.text?.contains("-"))!){
+            labelString = "-\(label.text!)"
+        }
+        else {
+            let negative = label.text!.index(label.text!.startIndex, offsetBy: 1)
+            labelString = label.text!.substring(from: negative)
+            }
+            label.text = labelString
     }
     @IBAction func didPressPlus(_ sender: AnyObject) {
         changeMode(newMode: .addition)
@@ -50,8 +72,11 @@ class ViewController: UIViewController {
     @IBAction func didPressSqRt(_ sender: UIButton) {
         changeMode(newMode: .squareRoot)
     }
+    @IBAction func didPressPercent(_ sender: UIButton) {
+        changeMode(newMode: .percent)
+    }
     @IBAction func didPressEquals(_ sender: AnyObject) {
-        guard let labelInt:Float = Float(labelString) else {
+        guard let labelInt:Double = Double(labelString) else {
             return
         }
         if (currentMode == .not_set || lastButtonWasMode) {
@@ -69,9 +94,10 @@ class ViewController: UIViewController {
         else if(currentMode == .division) {
             savedNum /= labelInt
         }
-        else if(currentMode == .squareRoot) {
+         if(currentMode == .squareRoot) {
             savedNum = labelInt
         }
+        
         currentMode = .not_set
         labelString = "\(savedNum)"
         updateText()
@@ -99,7 +125,7 @@ class ViewController: UIViewController {
     }
     
     func updateText() {
-        guard let labelInt:Float = Float(labelString) else {
+        guard let labelInt:Double = Double(labelString) else {
             return
         }
         if (currentMode == .not_set) {
@@ -108,9 +134,11 @@ class ViewController: UIViewController {
         
         let formatNumber:NumberFormatter = NumberFormatter()
         formatNumber.numberStyle = .decimal
+        formatNumber.maximumFractionDigits = 8
         let number:NSNumber = NSNumber(value: labelInt)
         
         label.text = formatNumber.string(from: number)
+        
     }
     
     func changeMode(newMode:modes) {
@@ -121,6 +149,9 @@ class ViewController: UIViewController {
         currentMode = newMode
         lastButtonWasMode = true
     }
+    
+    
+
     
     
 }
